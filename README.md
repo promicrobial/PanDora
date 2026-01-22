@@ -16,12 +16,33 @@ This database integrates genomes from the following projects:
 
 ## To recreate the database
 
+### Requirements
+
+The following tools must be installed and available in your `PATH`:
+
+- `minimap2`
+- `samtools`
+- `datasets` (NCBI datasets CLI)
+- `biopet-validatefastq`
+- `gunzip`
+- `wget`
+- `unzip`
+- `panSieve` (https://github.com/cpnh/panSieve)
+
 ```bash
-# Install dependencies
+# Install dependencies using conda
 conda env create -f environment.yml
 
-# Run
-src/pandora
+# Clone panSieve and add to your PATH
+git clone https://github.com/cpnh/panSieve
+
+export PATH="panSieve/src/sieve:$PATH"
+```
+
+## Usage
+
+```
+bash create-pandora
 ```
 
 ## Documentation
