@@ -1,0 +1,4 @@
+name: pandora
+channels:
+  - conda-forge
+  - bioconda
