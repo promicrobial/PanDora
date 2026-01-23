@@ -20,13 +20,7 @@ This database integrates genomes from the following projects:
 
 The following tools must be installed and available in your `PATH`:
 
-- `minimap2`
-- `samtools`
 - `datasets` (NCBI datasets CLI)
-- `biopet-validatefastq`
-- `gunzip`
-- `wget`
-- `unzip`
 - `panSieve` (https://github.com/cpnh/panSieve)
 
 ```bash
@@ -36,13 +30,13 @@ conda env create -f environment.yml
 # Clone panSieve and add to your PATH
 git clone https://github.com/cpnh/panSieve
 
-export PATH="panSieve/src/sieve:$PATH"
+export PATH="panSieve/src/:$PATH"
 ```
 
 ## Usage
 
 ```
-bash create-pandora
+bash create-pandora -g ref/hprc-v1.0-minigraph-grch38.gfa
 ```
 
 ## Documentation
