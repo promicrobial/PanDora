@@ -35,8 +35,8 @@ export PATH="panSieve/src/:$PATH"
 
 ## Usage
 
-```
-bash create-pandora -g ref/hprc-v1.0-minigraph-grch38.gfa
+```bash
+create-pandora -g ref/hprc-v1.0-minigraph-grch38.gfa
 ```
 
 ## Documentation
