@@ -39,6 +39,15 @@ cd seqtk
 make
 ```
 
+## Download panSieve
+
+```bash
+# Clone panSieve and add to your PATH
+git clone https://github.com/cpnh/panSieve
+
+export PATH="panSieve/src/:$PATH"
+```
+
 ## Building PanDora
 
 Make the main script executable
