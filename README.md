@@ -11,7 +11,7 @@ This database integrates genomes from the following projects:
 ## Contents
 
 - Number of assemblies used: 94
-- Total size: 9.2 GB
+- Total size: 9.6 GB
 - File format: FASTQ
 
 ## To recreate the database
@@ -21,7 +21,13 @@ This database integrates genomes from the following projects:
 The following tools must be installed and available in your `PATH`:
 
 - `datasets` (NCBI datasets CLI)
-- `panSieve` (https://github.com/cpnh/panSieve)
+- `panSieve` ([GitHub](https://github.com/cpnh/panSieve))
+- `seqtk`
+- `seqkit`
+- `vg`
+- `bcftools`
+- `tabix`
+- `bgzip`
 
 ```bash
 # Install dependencies using conda
