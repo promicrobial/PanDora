@@ -646,7 +646,7 @@ generate_summary() {
         fi
         echo ""
         echo "Final Database:"
-        local final_db="${DB_DIR}/pandora_nonredundant.fa"
+        local final_db="${DB_DIR}/pandora.fa"
         if [[ -f "$final_db" ]]; then
             local db_size
             db_size=$(du -h "$final_db" | cut -f1)
