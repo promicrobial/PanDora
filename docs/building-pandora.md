@@ -58,6 +58,15 @@ chmod +x create-pandora
 
 The minimal command to run PanDora requires only an HPRC GFA file:
 
+1. Download the HPRC pangenome from the European Bioinformatics Institute (EBI):
+
+```bash
+wget -q -O- ftp://ftp.sra.ebi.ac.uk/vol1/analysis/ERZ127/ERZ12792760/hprc-v1.0-minigraph-grch38.gfa.gz | gzip -d > hprc-v1.0-minigraph-grch38.gfa
+mv hprc-v1.0-minigraph-grch38.gfa ./ref
+``
+
+2. Execute script:
+
 ```bash
 create-pandora -g ref/hprc-v1.0-minigraph-grch38.gfa
 ```
